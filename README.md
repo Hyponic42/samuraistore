@@ -6,7 +6,7 @@ Aquí puedes adquirir **rangos**, **llaves**, **dinero** y **items especiales** 
 ---
 
 ## 🌐 Visita la tienda
-[Ver tienda en línea](https://tuusuario.github.io/mi-tienda)
+[Ver tienda en línea](https://github.com/Hyponic42/samuraistore/blob/main/tienda)
 
 ---
 
