@@ -1,1 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Imperial Network</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    /* Fuente estilo pixel */
+    body {
+      font-family: 'Press Start 2P', cursive;
+      background: linear-gradient(180deg, #0b0b0b, #1c1c1c);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
 
+    /* Header */
+    header {
+      background: linear-gradient(90deg, #FF0468, #FFBA08);
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      text-shadow: 2px 2px #000;
+      color: #fff;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 1em;
+      color: #f0f0f0;
+      text-shadow: 1px 1px #000;
+    }
+
+    /* Navegación */
+    nav {
+      background-color: #222;
+      text-align: center;
+      padding: 10px 0;
+      border-bottom: 3px solid #FF0468;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #FFBA08;
+      text-shadow: 1px 1px #000;
+    }
+
+    /* Contenedor productos */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px 10px;
+    }
+
+    /* Producto */
+    .producto {
+      background-color: #1b1b1b;
+      border: 3px solid #444;
+      border-radius: 12px;
+      margin: 15px;
+      padding: 20px;
+      width: 220px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    }
+
+    .producto:hover {
+      border-color: #FF0468;
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(255,4,104,0.5);
+    }
+
+    .producto img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+
+    .producto h2 {
+      color: #FFBA08;
+      margin: 10px 0;
+      font-size: 1em;
+    }
+
+    .producto p {
+      margin: 5px 0;
+      font-size: 0.8em;
+      line-height: 1.2em;
+    }
+
+    /* Secciones */
+    section {
+      margin-top: 30px;
+    }
+
+    section h1 {
+      text-align: center;
+      color: #FF0468;
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px #000;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      border-top: 3px solid #FF0468;
+    }
+
+    footer a {
+      color: #FFBA08;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      color: #FF0468;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .producto {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Imperial Network</h1>
+    <p>¡Compra rangos, llaves, dinero e items y mejora tu experiencia Minecraft!</p>
+  </header>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#rangos">🏆 Rangos</a>
+    <a href="#llaves">🗝️ Llaves</a>
+    <a href="#dinero">💰 Dinero</a>
+    <a href="#items">🛡️ Items</a>
+  </nav>
+
+  <!-- RANGOS -->
+  <section id="rangos">
+    <h1>🏆 Rangos</h1>
+    <div class="container">
+      <div class="producto">
+        <img src="images/rango1.png" alt="Rango VIP">
+        <h2>VIP</h2>
+        <p>Acceso a perks básicos dentro del servidor</p>
+        <p>Precio: $5</p>
+      </div>
+      <div class="producto">
+        <img src="images/rango2.png" alt="Rango Elite">
+        <h2>Elite</h2>
+        <p>Todos los beneficios VIP + extras exclusivos</p>
+        <p>Precio: $10</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LLAVES -->
+  <section id="llaves">
+    <h1>🗝️ Llaves</h1>
+    <div class="container">
+      <div class="producto">
+        <img src="images/llave1.png" alt="Llave Cofre Común">
+        <h2>Cofre Común</h2>
+        <p>Gira y obtén items aleatorios</p>
+        <p>Precio: $2</p>
+      </div>
+      <div class="producto">
+        <img src="images/llave2.png" alt="Llave Cofre Épico">
+        <h2>Cofre Épico</h2>
+        <p>Mayor probabilidad de items raros</p>
+        <p>Precio: $5</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DINERO -->
+  <section id="dinero">
+    <h1>💰 Dinero</h1>
+    <div class="container">
+      <div class="producto">
+        <img src="images/dinero.png" alt="Dinero">
+        <h2>1000 Coins</h2>
+        <p>Compra dinero dentro del juego y mejora tu experiencia</p>
+        <p>Precio: $3</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ITEMS -->
+  <section id="items">
+    <h1>🛡️ Items</h1>
+    <div class="container">
+      <div class="producto">
+        <img src="images/item1.png" alt="Espada Legendaria">
+        <h2>Espada Legendaria</h2>
+        <p>Un arma poderosa para tu personaje</p>
+        <p>Precio: $7</p>
+      </div>
+      <div class="producto">
+        <img src="images/item2.png" alt="Armadura Épica">
+        <h2>Armadura Épica</h2>
+        <p>Protección máxima para tus aventuras</p>
+        <p>Precio: $8</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Síguenos en nuestras redes:</p>
+    <a href="https://facebook.com">Facebook</a> |
+    <a href="https://instagram.com">Instagram</a> |
+    <a href="https://discord.com">Discord</a> |
+    <a href="https://x.com">X</a> |
+    <a href="https://wa.me/">WhatsApp</a>
+    <p>&copy; 2025 Imperial Network - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
